@@ -324,7 +324,7 @@ OK
 HUB address = 22 is mounted
 
 
------ Hub powered on ----
+----- Hub powered on (Plugable USB 2.0 7-Port Hub with 60W Power Adapter, https://plugable.com/products/usb2-hub7bc) ----
 
 --- Connecting T.16000M
 Buffer complete
