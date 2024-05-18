@@ -144,7 +144,7 @@ HUB address = 21 is mounted
 
 
 
---- After startup with USB hub connected
+--- After startup with USB hub (StarTech.com HB30C4AB, https://www.startech.com/en-gb/usb-hubs/hb30c4ab, USB-C to 4 USB-3.0 USB-A ports) connected
 --- Connecting Thrustmaster T.16000M Joystick
 
 
