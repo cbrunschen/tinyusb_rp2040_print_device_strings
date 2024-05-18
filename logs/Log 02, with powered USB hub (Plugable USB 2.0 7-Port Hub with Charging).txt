@@ -1,0 +1,1326 @@
+␀*** Fetch Device Strings ***
+Initializing USB Host.
+USBH init on controller 1
+sizeof(usbh_device_t) = 86
+sizeof(hcd_event_t) = 12
+sizeof(_ctrl_xfer) = 24
+sizeof(tuh_xfer_t) = 24
+sizeof(tu_fifo_t) = 20
+sizeof(tu_edpt_stream_t) = 40
+HID init
+HUB init
+sizeof(hw_endpoint_t) = 32
+Started USB Host.
+[0:] USBH DEVICE ATTACH
+Full Speed
+[0:0] Open EP0 with Size = 8
+Get 8 byte of Device Descriptor
+[0:0] Get Descriptor: 80 06 00 01 00 00 08 00 
+Transfer complete
+on EP 00 with 8 bytes: OK
+Buffer complete
+Transfer complete
+on EP 80 with 8 bytes: OK
+[0:0] Control data:
+  0000:  12 01 00 02 09 00 00 40                          |.......@|
+Buffer complete
+Transfer complete
+on EP 00 with 0 bytes: OK
+
+Set Address = 21
+[0:0] Set Address: 00 05 15 00 00 00 00 00 
+Transfer complete
+on EP 00 with 8 bytes: OK
+Buffer complete
+Transfer complete
+on EP 80 with 0 bytes: OK
+
+[0:21] Open EP0 with Size = 64
+Get Device Descriptor
+[0:21] Get Descriptor: 80 06 00 01 00 00 12 00 
+Transfer complete
+on EP 00 with 8 bytes: OK
+Buffer complete
+Transfer complete
+on EP 80 with 18 bytes: OK
+[0:21] Control data:
+  0000:  12 01 00 02 09 00 00 40 40 1A 01 01 11 01 00 01  |.......@@.......|
+  0010:  00 01                                            |..|
+Buffer complete
+Transfer complete
+on EP 00 with 0 bytes: OK
+
+Get Configuration[0] Descriptor (9 bytes)
+[0:21] Get Descriptor: 80 06 00 02 00 00 09 00 
+Transfer complete
+on EP 00 with 8 bytes: OK
+Buffer complete
+Transfer complete
+on EP 80 with 9 bytes: OK
+[0:21] Control data:
+  0000:  09 02 19 00 01 01 00 E0 32                       |........2|
+Buffer complete
+Transfer complete
+on EP 00 with 0 bytes: OK
+
+Get Configuration[0] Descriptor
+[0:21] Get Descriptor: 80 06 00 02 00 00 19 00 
+Transfer complete
+on EP 00 with 8 bytes: OK
+Buffer complete
+Transfer complete
+on EP 80 with 25 bytes: OK
+[0:21] Control data:
+  0000:  09 02 19 00 01 01 00 E0 32 09 04 00 00 01 09 00  |........2.......|
+  0010:  00 00 07 05 81 03 01 00 FF                       |.........|
+Buffer complete
+Transfer complete
+on EP 00 with 0 bytes: OK
+
+Parsing Configuration descriptor (wTotalLength = 25)
+  Open EP 81 with Size = 1
+Allocate interrupt ep 0
+  HUB opened
+  Bind EP 81 to driver id 1
+Set Configuration = 1
+[0:21] Set Configuration: 00 09 01 00 00 00 00 00 
+Transfer complete
+on EP 00 with 8 bytes: OK
+Buffer complete
+Transfer complete
+on EP 80 with 0 bytes: OK
+
+Device configured
+HUB set config: itf = 0
+[0:21] Class Request: A0 06 00 00 00 00 09 00 
+Transfer complete
+on EP 00 with 8 bytes: OK
+Buffer complete
+Transfer complete
+on EP 80 with 9 bytes: OK
+[0:21] Control data:
+  0000:  09 29 04 00 00 32 64 00 FF                       |.)...2d..|
+Buffer complete
+Transfer complete
+on EP 00 with 0 bytes: OK
+
+HUB Set Feature: PORT_POWER, addr = 21 port = 1
+[0:21] Class Request: 23 03 08 00 01 00 00 00 
+Transfer complete
+on EP 00 with 8 bytes: OK
+Buffer complete
+Transfer complete
+on EP 80 with 0 bytes: OK
+
+HUB Set Feature: PORT_POWER, addr = 21 port = 2
+[0:21] Class Request: 23 03 08 00 02 00 00 00 
+Transfer complete
+on EP 00 with 8 bytes: OK
+Buffer complete
+Transfer complete
+on EP 80 with 0 bytes: OK
+
+HUB Set Feature: PORT_POWER, addr = 21 port = 3
+[0:21] Class Request: 23 03 08 00 03 00 00 00 
+Transfer complete
+on EP 00 with 8 bytes: OK
+Buffer complete
+Transfer complete
+on EP 80 with 0 bytes: OK
+
+HUB Set Feature: PORT_POWER, addr = 21 port = 4
+[0:21] Class Request: 23 03 08 00 04 00 00 00 
+Transfer complete
+on EP 00 with 8 bytes: OK
+Buffer complete
+Transfer complete
+on EP 80 with 0 bytes: OK
+
+  Queue EP 81 with 1 bytes ... 
+OK
+HUB address = 21 is mounted
+Buffer complete
+on EP 81 with 1 bytes: OK
+HUB xfer callback
+  Hub Status Change = 0x10
+HUB Get Port Status: addr = 21 port = 4
+[0:21] Class Request: A3 00 00 00 04 00 04 00 
+Transfer complete
+on EP 00 with 8 bytes: OK
+Buffer complete
+Transfer complete
+on EP 80 with 4 bytes: OK
+[0:21] Control data:
+  0000:  01 01 01 00                                      |....|
+Buffer complete
+Transfer complete
+on EP 00 with 0 bytes: OK
+
+HUB Clear Feature: PORT_CONNECTION_CHANGE, addr = 21 port = 4
+[0:21] Class Request: 23 01 10 00 04 00 00 00 
+Transfer complete
+on EP 00 with 8 bytes: OK
+Buffer complete
+Transfer complete
+on EP 80 with 0 bytes: OK
+
+HUB Set Feature: PORT_RESET, addr = 21 port = 4
+[0:21] Class Request: 23 03 04 00 04 00 00 00 
+Transfer complete
+on EP 00 with 8 bytes: OK
+Buffer complete
+Transfer complete
+on EP 80 with 0 bytes: OK
+
+[0:] USBH DEVICE ATTACH
+HUB Get Port Status: addr = 21 port = 4
+[0:21] Class Request: A3 00 00 00 04 00 04 00 
+Transfer complete
+on EP 00 with 8 bytes: OK
+Buffer complete
+Transfer complete
+on EP 80 with 4 bytes: OK
+[0:21] Control data:
+  0000:  03 01 10 00                                      |....|
+Buffer complete
+Transfer complete
+on EP 00 with 0 bytes: OK
+
+HUB Clear Feature: PORT_RESET_CHANGE, addr = 21 port = 4
+[0:21] Class Request: 23 01 14 00 04 00 00 00 
+Transfer complete
+on EP 00 with 8 bytes: OK
+Buffer complete
+Transfer complete
+on EP 80 with 0 bytes: OK
+
+[0:0] Open EP0 with Size = 8
+Get 8 byte of Device Descriptor
+[0:0] Get Descriptor: 80 06 00 01 00 00 08 00 
+Transfer complete
+on EP 00 with 8 bytes: OK
+Buffer complete
+Transfer complete
+on EP 80 with 8 bytes: OK
+[0:0] Control data:
+  0000:  12 01 00 02 09 00 00 40                          |.......@|
+Buffer complete
+Transfer complete
+on EP 00 with 0 bytes: OK
+
+Set Address = 22
+[0:0] Set Address: 00 05 16 00 00 00 00 00 
+Transfer complete
+on EP 00 with 8 bytes: OK
+Buffer complete
+Transfer complete
+on EP 80 with 0 bytes: OK
+
+[0:22] Open EP0 with Size = 64
+Get Device Descriptor
+[0:22] Get Descriptor: 80 06 00 01 00 00 12 00 
+Transfer complete
+on EP 00 with 8 bytes: OK
+Buffer complete
+Transfer complete
+on EP 80 with 18 bytes: OK
+[0:22] Control data:
+  0000:  12 01 00 02 09 00 00 40 40 1A 01 01 11 01 00 01  |.......@@.......|
+  0010:  00 01                                            |..|
+Buffer complete
+Transfer complete
+on EP 00 with 0 bytes: OK
+
+Get Configuration[0] Descriptor (9 bytes)
+[0:22] Get Descriptor: 80 06 00 02 00 00 09 00 
+Transfer complete
+on EP 00 with 8 bytes: OK
+Buffer complete
+Transfer complete
+on EP 80 with 9 bytes: OK
+[0:22] Control data:
+  0000:  09 02 19 00 01 01 00 E0 32                       |........2|
+Buffer complete
+Transfer complete
+on EP 00 with 0 bytes: OK
+
+Get Configuration[0] Descriptor
+[0:22] Get Descriptor: 80 06 00 02 00 00 19 00 
+Transfer complete
+on EP 00 with 8 bytes: OK
+Buffer complete
+Transfer complete
+on EP 80 with 25 bytes: OK
+[0:22] Control data:
+  0000:  09 02 19 00 01 01 00 E0 32 09 04 00 00 01 09 00  |........2.......|
+  0010:  00 00 07 05 81 03 01 00 FF                       |.........|
+Buffer complete
+Transfer complete
+on EP 00 with 0 bytes: OK
+
+Parsing Configuration descriptor (wTotalLength = 25)
+  Open EP 81 with Size = 1
+Allocate interrupt ep 1
+  HUB opened
+  Bind EP 81 to driver id 1
+Set Configuration = 1
+[0:22] Set Configuration: 00 09 01 00 00 00 00 00 
+Transfer complete
+on EP 00 with 8 bytes: OK
+Buffer complete
+Transfer complete
+on EP 80 with 0 bytes: OK
+
+Device configured
+HUB set config: itf = 0
+[0:22] Class Request: A0 06 00 00 00 00 09 00 
+Transfer complete
+on EP 00 with 8 bytes: OK
+Buffer complete
+Transfer complete
+on EP 80 with 9 bytes: OK
+[0:22] Control data:
+  0000:  09 29 04 00 00 32 64 00 FF                       |.)...2d..|
+Buffer complete
+Transfer complete
+on EP 00 with 0 bytes: OK
+
+HUB Set Feature: PORT_POWER, addr = 22 port = 1
+[0:22] Class Request: 23 03 08 00 01 00 00 00 
+Transfer complete
+on EP 00 with 8 bytes: OK
+Buffer complete
+Transfer complete
+on EP 80 with 0 bytes: OK
+
+HUB Set Feature: PORT_POWER, addr = 22 port = 2
+[0:22] Class Request: 23 03 08 00 02 00 00 00 
+Transfer complete
+on EP 00 with 8 bytes: OK
+Buffer complete
+Transfer complete
+on EP 80 with 0 bytes: OK
+
+HUB Set Feature: PORT_POWER, addr = 22 port = 3
+[0:22] Class Request: 23 03 08 00 03 00 00 00 
+Transfer complete
+on EP 00 with 8 bytes: OK
+Buffer complete
+Transfer complete
+on EP 80 with 0 bytes: OK
+
+HUB Set Feature: PORT_POWER, addr = 22 port = 4
+[0:22] Class Request: 23 03 08 00 04 00 00 00 
+Transfer complete
+on EP 00 with 8 bytes: OK
+Buffer complete
+Transfer complete
+on EP 80 with 0 bytes: OK
+
+  Queue EP 81 with 1 bytes ... 
+OK
+  Queue EP 81 with 1 bytes ... 
+OK
+HUB address = 22 is mounted
+
+
+----- Hub powered on ----
+
+--- Connecting T.16000M
+Buffer complete
+on EP 81 with 1 bytes: OK
+HUB xfer callback
+  Hub Status Change = 0x02
+HUB Get Port Status: addr = 21 port = 1
+[0:21] Class Request: A3 00 00 00 01 00 04 00 
+Transfer complete
+on EP 00 with 8 bytes: OK
+Buffer complete
+Transfer complete
+on EP 80 with 4 bytes: OK
+[0:21] Control data:
+  0000:  01 01 01 00                                      |....|
+Buffer complete
+Transfer complete
+on EP 00 with 0 bytes: OK
+
+HUB Clear Feature: PORT_CONNECTION_CHANGE, addr = 21 port = 1
+[0:21] Class Request: 23 01 10 00 01 00 00 00 
+Transfer complete
+on EP 00 with 8 bytes: OK
+Buffer complete
+Transfer complete
+on EP 80 with 0 bytes: OK
+
+HUB Set Feature: PORT_RESET, addr = 21 port = 1
+[0:21] Class Request: 23 03 04 00 01 00 00 00 
+Transfer complete
+on EP 00 with 8 bytes: OK
+Buffer complete
+Transfer complete
+on EP 80 with 0 bytes: OK
+
+[0:] USBH DEVICE ATTACH
+HUB Get Port Status: addr = 21 port = 1
+[0:21] Class Request: A3 00 00 00 01 00 04 00 
+Transfer complete
+on EP 00 with 8 bytes: OK
+Buffer complete
+Transfer complete
+on EP 80 with 4 bytes: OK
+[0:21] Control data:
+  0000:  03 01 10 00                                      |....|
+Buffer complete
+Transfer complete
+on EP 00 with 0 bytes: OK
+
+HUB Clear Feature: PORT_RESET_CHANGE, addr = 21 port = 1
+[0:21] Class Request: 23 01 14 00 01 00 00 00 
+Transfer complete
+on EP 00 with 8 bytes: OK
+Buffer complete
+Transfer complete
+on EP 80 with 0 bytes: OK
+
+[0:0] Open EP0 with Size = 8
+Get 8 byte of Device Descriptor
+[0:0] Get Descriptor: 80 06 00 01 00 00 08 00 
+Transfer complete
+on EP 00 with 8 bytes: OK
+Buffer complete
+Transfer complete
+on EP 80 with 8 bytes: OK
+[0:0] Control data:
+  0000:  12 01 10 01 00 00 00 40                          |.......@|
+Buffer complete
+Transfer complete
+on EP 00 with 0 bytes: OK
+
+Set Address = 1
+[0:0] Set Address: 00 05 01 00 00 00 00 00 
+Transfer complete
+on EP 00 with 8 bytes: OK
+Buffer complete
+Transfer complete
+on EP 80 with 0 bytes: OK
+
+[0:1] Open EP0 with Size = 64
+Get Device Descriptor
+[0:1] Get Descriptor: 80 06 00 01 00 00 12 00 
+Transfer complete
+on EP 00 with 8 bytes: OK
+Buffer complete
+Transfer complete
+on EP 80 with 18 bytes: OK
+[0:1] Control data:
+  0000:  12 01 10 01 00 00 00 40 4F 04 0A B1 00 05 01 02  |.......@O.......|
+  0010:  00 01                                            |..|
+Buffer complete
+Transfer complete
+on EP 00 with 0 bytes: OK
+
+Get Configuration[0] Descriptor (9 bytes)
+[0:1] Get Descriptor: 80 06 00 02 00 00 09 00 
+Transfer complete
+on EP 00 with 8 bytes: OK
+Buffer complete
+Transfer complete
+on EP 80 with 9 bytes: OK
+[0:1] Control data:
+  0000:  09 02 22 00 01 01 00 80 32                       |..".....2|
+Buffer complete
+Transfer complete
+on EP 00 with 0 bytes: OK
+
+Get Configuration[0] Descriptor
+[0:1] Get Descriptor: 80 06 00 02 00 00 22 00 
+Transfer complete
+on EP 00 with 8 bytes: OK
+Buffer complete
+Transfer complete
+on EP 80 with 34 bytes: OK
+[0:1] Control data:
+  0000:  09 02 22 00 01 01 00 80 32 09 04 00 00 01 03 00  |..".....2.......|
+  0010:  00 00 09 21 00 01 00 01 22 7C 00 07 05 81 03 0A  |...!...."|......|
+  0020:  00 0A                                            |..|
+Buffer complete
+Transfer complete
+on EP 00 with 0 bytes: OK
+
+Parsing Configuration descriptor (wTotalLength = 34)
+[1] HID opening Interface 0
+  Open EP 81 with Size = 10
+Allocate interrupt ep 2
+  HID opened
+  Bind EP 81 to driver id 0
+Set Configuration = 1
+[0:1] Set Configuration: 00 09 01 00 00 00 00 00 
+Transfer complete
+on EP 00 with 8 bytes: OK
+Buffer complete
+Transfer complete
+on EP 80 with 0 bytes: OK
+
+Device configured
+HID set config: itf = 0
+HID Set Idle 
+[0:1] Class Request: 21 0A 00 00 00 00 00 00 
+Transfer complete
+on EP 00 with 8 bytes: OK
+Buffer complete
+Transfer complete
+on EP 80 with 0 bytes: OK
+
+HID Get Report Descriptor
+[0:1] Get Descriptor: 81 06 00 22 00 00 7C 00 
+Transfer complete
+on EP 00 with 8 bytes: OK
+Buffer complete
+Transfer complete
+on EP 80 with 124 bytes: OK
+[0:1] Control data:
+  0000:  05 01 09 04 A1 01 05 09 19 01 29 10 15 00 25 01  |..........)...%.|
+  0010:  35 00 45 01 75 01 95 10 81 02 05 01 09 39 15 00  |5.E.u........9..|
+  0020:  25 07 35 00 46 3B 01 65 14 75 04 95 01 81 42 81  |%.5.F;.e.u....B.|
+  0030:  01 05 01 09 30 15 00 26 FF 3F 35 00 46 FF 3F 65  |....0..&.?5.F.?e|
+  0040:  00 75 0E 95 01 81 02 75 02 81 01 09 31 75 0E 81  |.u.....u....1u..|
+  0050:  02 75 02 81 01 09 35 09 36 15 00 26 FF 00 35 00  |.u....5.6..&..5.|
+  0060:  46 FF 00 65 00 75 08 95 02 81 02 06 00 FF 27 FF  |F..e.u........'.|
+  0070:  FF 00 00 09 01 75 08 95 04 B1 A2 C0              |.....u......|
+Buffer complete
+Transfer complete
+on EP 00 with 0 bytes: OK
+
+@ 50368: [1.0] [044f:b10a] connected, descriptor has 124 bytes
+  Queue EP 81 with 1 bytes ... 
+OK
+@ 55369: Fetching [1] Manufacturer string
+[0:1] Get Descriptor: 80 06 01 03 09 04 00 01 
+Transfer complete
+on EP 00 with 8 bytes: OK
+Buffer complete
+Transfer complete
+on EP 80 with 26 bytes: OK
+[0:1] Control data:
+  0000:  1A 03 54 00 68 00 72 00 75 00 73 00 74 00 6D 00  |..T.h.r.u.s.t.m.|
+  0010:  61 00 73 00 74 00 65 00 72 00                    |a.s.t.e.r.|
+Buffer complete
+Transfer complete
+on EP 00 with 0 bytes: OK
+
+@ 55404: Have [1] Manufacturer string, 24 bytes = [54 00 68 00 72 00 75 00 73 00 74 00 6d 00 61 00 73 00 74 00 65 00 72 00] = 'Thrustmaster'
+@ 55416: Fetching [1] Product string
+[0:1] Get Descriptor: 80 06 02 03 09 04 00 01 
+Transfer complete
+on EP 00 with 8 bytes: OK
+Buffer complete
+Transfer complete
+on EP 80 with 18 bytes: OK
+[0:1] Control data:
+  0000:  12 03 54 00 2E 00 31 00 36 00 30 00 30 00 30 00  |..T...1.6.0.0.0.|
+  0010:  4D 00                                            |M.|
+Buffer complete
+Transfer complete
+on EP 00 with 0 bytes: OK
+
+@ 55453: Have [1] Product string, 16 bytes = [54 00 2e 00 31 00 36 00 30 00 30 00 30 00 4d 00] = 'T.16000M'
+@ 55462: Fetching [1] Serial string
+  returns false.
+
+
+--- Connectind Sidewinder FFB 2
+
+Buffer complete
+on EP 81 with 1 bytes: OK
+HUB xfer callback
+  Hub Status Change = 0x04
+HUB Get Port Status: addr = 21 port = 2
+[0:21] Class Request: A3 00 00 00 02 00 04 00 
+Transfer complete
+on EP 00 with 8 bytes: OK
+Buffer complete
+Transfer complete
+on EP 80 with 4 bytes: OK
+[0:21] Control data:
+  0000:  01 01 01 00                                      |....|
+Buffer complete
+Transfer complete
+on EP 00 with 0 bytes: OK
+
+HUB Clear Feature: PORT_CONNECTION_CHANGE, addr = 21 port = 2
+[0:21] Class Request: 23 01 10 00 02 00 00 00 
+Transfer complete
+on EP 00 with 8 bytes: OK
+Buffer complete
+Transfer complete
+on EP 80 with 0 bytes: OK
+
+HUB Set Feature: PORT_RESET, addr = 21 port = 2
+[0:21] Class Request: 23 03 04 00 02 00 00 00 
+Transfer complete
+on EP 00 with 8 bytes: OK
+Buffer complete
+Transfer complete
+on EP 80 with 0 bytes: OK
+
+[0:] USBH DEVICE ATTACH
+HUB Get Port Status: addr = 21 port = 2
+[0:21] Class Request: A3 00 00 00 02 00 04 00 
+Transfer complete
+on EP 00 with 8 bytes: OK
+Buffer complete
+Transfer complete
+on EP 80 with 4 bytes: OK
+[0:21] Control data:
+  0000:  03 01 10 00                                      |....|
+Buffer complete
+Transfer complete
+on EP 00 with 0 bytes: OK
+
+HUB Clear Feature: PORT_RESET_CHANGE, addr = 21 port = 2
+[0:21] Class Request: 23 01 14 00 02 00 00 00 
+Transfer complete
+on EP 00 with 8 bytes: OK
+Buffer complete
+Transfer complete
+on EP 80 with 0 bytes: OK
+
+[0:0] Open EP0 with Size = 8
+Get 8 byte of Device Descriptor
+[0:0] Get Descriptor: 80 06 00 01 00 00 08 00 
+Transfer complete
+on EP 00 with 8 bytes: OK
+Buffer complete
+Transfer complete
+on EP 80 with 8 bytes: OK
+[0:0] Control data:
+  0000:  12 01 10 01 00 00 00 08                          |........|
+Buffer complete
+Transfer complete
+on EP 00 with 0 bytes: OK
+
+Set Address = 2
+[0:0] Set Address: 00 05 02 00 00 00 00 00 
+Transfer complete
+on EP 00 with 8 bytes: OK
+Buffer complete
+Transfer complete
+on EP 80 with 0 bytes: OK
+
+[0:2] Open EP0 with Size = 8
+Get Device Descriptor
+[0:2] Get Descriptor: 80 06 00 01 00 00 12 00 
+Transfer complete
+on EP 00 with 8 bytes: OK
+Buffer complete
+Buffer complete
+Transfer complete
+on EP 80 with 18 bytes: OK
+[0:2] Control data:
+  0000:  12 01 10 01 00 00 00 08 5E 04 1B 00 00 0A 01 02  |........^.......|
+  0010:  00 01                                            |..|
+Buffer complete
+Transfer complete
+on EP 00 with 0 bytes: OK
+
+Get Configuration[0] Descriptor (9 bytes)
+[0:2] Get Descriptor: 80 06 00 02 00 00 09 00 
+Transfer complete
+on EP 00 with 8 bytes: OK
+Buffer complete
+Transfer complete
+on EP 80 with 9 bytes: OK
+[0:2] Control data:
+  0000:  09 02 29 00 01 01 00 A0 32                       |..).....2|
+Buffer complete
+Transfer complete
+on EP 00 with 0 bytes: OK
+
+Get Configuration[0] Descriptor
+[0:2] Get Descriptor: 80 06 00 02 00 00 29 00 
+Transfer complete
+on EP 00 with 8 bytes: OK
+Buffer complete
+Buffer complete
+Buffer complete
+Transfer complete
+on EP 80 with 41 bytes: OK
+[0:2] Control data:
+  0000:  09 02 29 00 01 01 00 A0 32 09 04 00 00 02 03 00  |..).....2.......|
+  0010:  00 00 09 21 00 01 00 01 22 3F 05 07 05 81 03 40  |...!...."?.....@|
+  0020:  00 01 07 05 02 03 10 00 04                       |.........|
+Buffer complete
+Transfer complete
+on EP 00 with 0 bytes: OK
+
+Parsing Configuration descriptor (wTotalLength = 41)
+[2] HID opening Interface 0
+  Open EP 81 with Size = 64
+Allocate interrupt ep 3
+  Open EP 02 with Size = 16
+Allocate interrupt ep 4
+  HID opened
+  Bind EP 81 to driver id 0
+  Bind EP 02 to driver id 0
+Set Configuration = 1
+[0:2] Set Configuration: 00 09 01 00 00 00 00 00 
+Transfer complete
+on EP 00 with 8 bytes: OK
+Buffer complete
+Transfer complete
+on EP 80 with 0 bytes: OK
+
+Device configured
+HID set config: itf = 0
+HID Set Idle 
+[0:2] Class Request: 21 0A 00 00 00 00 00 00 
+Transfer complete
+on EP 00 with 8 bytes: OK
+on EP 80 with 0 bytes: STALLED
+[0:2] Control STALLED, xferred_bytes = 0
+21 0A 00 00 00 00 00 00 
+
+HID Get Report Descriptor
+[0:2] Get Descriptor: 81 06 00 22 00 00 3F 05 
+Transfer complete
+on EP 00 with 8 bytes: OK
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Transfer complete
+on EP 80 with 1343 bytes: OK
+[0:2] Control data:
+  0000:  05 01 09 04 A1 01 85 01 09 01 A1 00 66 00 00 55  |............f..U|
+  0010:  00 16 00 FE 26 FF 01 35 00 46 FF 03 95 01 75 0A  |....&..5.F....u.|
+  0020:  09 30 81 02 75 06 81 01 09 31 75 0A 81 02 75 06  |.0..u....1u...u.|
+  0030:  95 01 81 01 15 E0 25 1F 35 00 45 3F 66 14 00 09  |......%.5.E?f...|
+  0040:  35 81 02 75 02 81 01 66 00 00 C0 75 07 95 01 15  |5..u...f...u....|
+  0050:  00 25 7F 35 00 45 7F 09 36 81 02 75 01 81 01 09  |.%.5.E..6..u....|
+  0060:  39 15 00 25 07 35 00 46 3B 01 66 14 00 75 04 95  |9..%.5.F;.f..u..|
+  0070:  01 81 42 95 01 81 01 66 00 00 05 09 19 01 29 08  |..B....f......).|
+  0080:  15 00 25 01 35 00 45 01 95 08 75 01 81 02 95 04  |..%.5.E...u.....|
+  0090:  75 08 81 01 05 0F 09 92 A1 02 85 02 09 9F 09 A0  |u...............|
+  00A0:  09 A4 09 A5 09 A6 15 00 25 01 35 00 45 01 75 01  |........%.5.E.u.|
+  00B0:  95 05 81 02 95 03 81 03 09 94 15 00 25 01 35 00  |............%.5.|
+  00C0:  45 01 75 01 95 01 81 02 09 22 15 01 25 28 35 01  |E.u......"..%(5.|
+  00D0:  45 28 75 07 95 01 81 02 C0 09 21 A1 02 85 01 09  |E(u.......!.....|
+  00E0:  22 15 01 25 28 35 01 45 28 75 08 95 01 91 02 09  |"..%(5.E(u......|
+  00F0:  25 A1 02 09 26 09 27 09 30 09 31 09 32 09 33 09  |%...&.'.0.1.2.3.|
+  0100:  34 09 40 09 41 09 42 09 43 09 28 25 0C 15 01 35  |4.@.A.B.C.(%...5|
+  0110:  01 45 0C 75 08 95 01 91 00 C0 09 50 09 54 09 51  |.E.u.......P.T.Q|
+  0120:  15 00 26 FF 7F 35 00 46 FF 7F 66 03 10 55 FD 75  |..&..5.F..f..U.u|
+  0130:  10 95 03 91 02 55 00 66 00 00 09 52 15 00 26 FF  |.....U.f...R..&.|
+  0140:  00 35 00 46 10 27 75 08 95 01 91 02 09 53 15 01  |.5.F.'u......S..|
+  0150:  25 08 35 01 45 08 75 08 95 01 91 02 09 55 A1 02  |%.5.E.u......U..|
+  0160:  05 01 09 30 09 31 15 00 25 01 75 01 95 02 91 02  |...0.1..%.u.....|
+  0170:  C0 05 0F 09 56 95 01 91 02 95 05 91 03 09 57 A1  |....V.........W.|
+  0180:  02 0B 01 00 0A 00 0B 02 00 0A 00 66 14 00 55 FE  |...........f..U.|
+  0190:  15 00 26 FF 00 35 00 47 A0 8C 00 00 66 00 00 75  |..&..5.G....f..u|
+  01A0:  08 95 02 91 02 55 00 66 00 00 C0 05 0F 09 A7 66  |.....U.f.......f|
+  01B0:  03 10 55 FD 15 00 26 FF 7F 35 00 46 FF 7F 75 10  |..U...&..5.F..u.|
+  01C0:  95 01 91 02 66 00 00 55 00 C0 05 0F 09 5A A1 02  |....f..U.....Z..|
+  01D0:  85 02 09 22 15 01 25 28 35 01 45 28 75 08 95 01  |..."..%(5.E(u...|
+  01E0:  91 02 09 5B 09 5D 15 00 26 FF 00 35 00 46 10 27  |...[.]..&..5.F.'|
+  01F0:  95 02 91 02 09 5C 09 5E 66 03 10 55 FD 26 FF 7F  |.....\.^f..U.&..|
+  0200:  46 FF 7F 75 10 91 02 45 00 66 00 00 55 00 C0 09  |F..u...E.f..U...|
+  0210:  5F A1 02 85 03 09 22 15 01 25 28 35 01 45 28 75  |_....."..%(5.E(u|
+  0220:  08 95 01 91 02 09 23 15 00 25 01 35 00 45 01 75  |......#..%.5.E.u|
+  0230:  04 95 01 91 02 09 58 A1 02 0B 01 00 0A 00 0B 02  |......X.........|
+  0240:  00 0A 00 75 02 95 02 91 02 C0 15 80 25 7F 36 F0  |...u........%.6.|
+  0250:  D8 46 10 27 09 60 75 08 95 01 91 02 36 F0 D8 46  |.F.'.`u.....6..F|
+  0260:  10 27 09 61 09 62 95 02 91 02 15 00 26 FF 00 35  |.'.a.b......&..5|
+  0270:  00 46 10 27 09 63 09 64 75 08 95 02 91 02 09 65  |.F.'.c.du......e|
+  0280:  46 10 27 95 01 91 02 C0 09 6E A1 02 85 04 09 22  |F.'......n....."|
+  0290:  15 01 25 28 35 01 45 28 75 08 95 01 91 02 09 70  |..%(5.E(u......p|
+  02A0:  15 00 26 FF 00 35 00 46 10 27 75 08 95 01 91 02  |..&..5.F.'u.....|
+  02B0:  09 6F 15 80 25 7F 36 F0 D8 46 10 27 95 01 91 02  |.o..%.6..F.'....|
+  02C0:  09 71 66 14 00 55 FE 15 00 26 FF 00 35 00 47 A0  |.qf..U...&..5.G.|
+  02D0:  8C 00 00 91 02 09 72 26 FF 7F 46 FF 7F 66 03 10  |......r&..F..f..|
+  02E0:  55 FD 75 10 95 01 91 02 66 00 00 55 00 C0 09 73  |U.u.....f..U...s|
+  02F0:  A1 02 85 05 09 22 15 01 25 28 35 01 45 28 75 08  |....."..%(5.E(u.|
+  0300:  95 01 91 02 09 70 16 01 FF 26 FF 00 36 F0 D8 46  |.....p...&..6..F|
+  0310:  10 27 75 10 95 01 91 02 C0 09 74 A1 02 85 06 09  |.'u.......t.....|
+  0320:  22 15 01 25 28 35 01 45 28 75 08 95 01 91 02 09  |"..%(5.E(u......|
+  0330:  75 09 76 15 80 25 7F 36 F0 D8 46 10 27 75 08 95  |u.v..%.6..F.'u..|
+  0340:  02 91 02 C0 09 68 A1 02 85 07 09 22 15 01 25 28  |.....h....."..%(|
+  0350:  35 01 45 28 75 08 95 01 91 02 09 6C 15 00 26 10  |5.E(u......l..&.|
+  0360:  27 35 00 46 10 27 75 10 95 01 91 02 09 69 15 81  |'5.F.'u......i..|
+  0370:  25 7F 35 00 46 FF 00 75 08 95 0C 92 02 01 C0 09  |%.5.F..u........|
+  0380:  66 A1 02 85 08 05 01 09 30 09 31 15 81 25 7F 35  |f.......0.1..%.5|
+  0390:  00 46 FF 00 75 08 95 02 91 02 C0 05 0F 09 77 A1  |.F..u.........w.|
+  03A0:  02 85 0A 09 22 15 01 25 28 35 01 45 28 75 08 95  |...."..%(5.E(u..|
+  03B0:  01 91 02 09 78 A1 02 09 79 09 7A 09 7B 15 01 25  |....x...y.z.{..%|
+  03C0:  03 75 08 95 01 91 00 C0 09 7C 15 00 26 FF 00 35  |.u.......|..&..5|
+  03D0:  00 46 FF 00 91 02 C0 09 90 A1 02 85 0B 09 22 25  |.F............"%|
+  03E0:  28 15 01 35 01 45 28 75 08 95 01 91 02 C0 09 96  |(..5.E(u........|
+  03F0:  A1 02 85 0C 09 97 09 98 09 99 09 9A 09 9B 09 9C  |................|
+  0400:  15 01 25 06 75 08 95 01 91 00 C0 09 7D A1 02 85  |..%.u.......}...|
+  0410:  0D 09 7E 15 00 26 FF 00 35 00 46 10 27 75 08 95  |..~..&..5.F.'u..|
+  0420:  01 91 02 C0 09 6B A1 02 85 0E 09 22 15 01 25 28  |.....k....."..%(|
+  0430:  35 01 45 28 75 08 95 01 91 02 09 6D 15 00 26 FF  |5.E(u......m..&.|
+  0440:  00 35 00 46 FF 00 75 08 95 01 91 02 09 51 66 03  |.5.F..u......Qf.|
+  0450:  10 55 FD 15 00 26 FF 7F 35 00 46 FF 7F 75 10 95  |.U...&..5.F..u..|
+  0460:  01 91 02 55 00 66 00 00 C0 09 AB A1 02 85 01 09  |...U.f..........|
+  0470:  25 A1 02 09 26 09 27 09 30 09 31 09 32 09 33 09  |%...&.'.0.1.2.3.|
+  0480:  34 09 40 09 41 09 42 09 43 09 28 25 0C 15 01 35  |4.@.A.B.C.(%...5|
+  0490:  01 45 0C 75 08 95 01 B1 00 C0 05 01 09 3B 15 00  |.E.u.........;..|
+  04A0:  26 FF 01 35 00 46 FF 01 75 0A 95 01 B1 02 75 06  |&..5.F..u.....u.|
+  04B0:  B1 01 C0 05 0F 09 89 A1 02 85 02 09 22 25 28 15  |............"%(.|
+  04C0:  01 35 01 45 28 75 08 95 01 B1 02 09 8B A1 02 09  |.5.E(u..........|
+  04D0:  8C 09 8D 09 8E 25 03 15 01 35 01 45 03 75 08 95  |.....%...5.E.u..|
+  04E0:  01 B1 00 C0 09 AC 15 00 27 FF FF 00 00 35 00 47  |........'....5.G|
+  04F0:  FF FF 00 00 75 10 95 01 B1 00 C0 09 7F A1 02 85  |....u...........|
+  0500:  03 09 80 75 10 95 01 15 00 35 00 27 FF FF 00 00  |...u.....5.'....|
+  0510:  47 FF FF 00 00 B1 02 09 83 26 FF 00 46 FF 00 75  |G........&..F..u|
+  0520:  08 95 01 B1 02 09 A9 09 AA 75 01 95 02 15 00 25  |.........u.....%|
+  0530:  01 35 00 45 01 B1 02 75 06 95 01 B1 03 C0 C0     |.5.E...u.......|
+Buffer complete
+Transfer complete
+on EP 00 with 0 bytes: OK
+
+@ 74480: [2.1] [045e:001b] connected, descriptor has 1343 bytes
+  Queue EP 81 with 1 bytes ... 
+OK
+@ 79481: Fetching [1] Manufacturer string
+[0:1] Get Descriptor: 80 06 01 03 09 04 00 01 
+Transfer complete
+on EP 00 with 8 bytes: OK
+on EP 80 with 0 bytes: STALLED
+[0:1] Control STALLED, xferred_bytes = 0
+80 06 01 03 09 04 00 01 
+
+@ 79498: Have [1] Manufacturer string, 254 bytes = [00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00] = '...............................................................................................................................'
+@ 79581: Fetching [1] Product string
+[0:1] Get Descriptor: 80 06 02 03 09 04 00 01 
+Transfer complete
+on EP 00 with 8 bytes: OK
+on EP 80 with 0 bytes: STALLED
+[0:1] Control STALLED, xferred_bytes = 0
+80 06 02 03 09 04 00 01 
+
+@ 79601: Have [1] Product string, 254 bytes = [00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00] = '...............................................................................................................................'
+@ 79683: Fetching [1] Serial string
+  returns false.
+@ 79688: Fetching [2] Manufacturer string
+[0:2] Get Descriptor: 80 06 01 03 09 04 00 01 
+Transfer complete
+on EP 00 with 8 bytes: OK
+Buffer complete
+Buffer complete
+Transfer complete
+on EP 80 with 20 bytes: OK
+[0:2] Control data:
+  0000:  14 03 4D 00 69 00 63 00 72 00 6F 00 73 00 6F 00  |..M.i.c.r.o.s.o.|
+  0010:  66 00 74 00                                      |f.t.|
+Buffer complete
+Transfer complete
+on EP 00 with 0 bytes: OK
+
+@ 79727: Have [2] Manufacturer string, 18 bytes = [4d 00 69 00 63 00 72 00 6f 00 73 00 6f 00 66 00 74 00] = 'Microsoft'
+@ 79737: Fetching [2] Product string
+[0:2] Get Descriptor: 80 06 02 03 09 04 00 01 
+Transfer complete
+on EP 00 with 8 bytes: OK
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Buffer complete
+Transfer complete
+on EP 80 with 74 bytes: OK
+[0:2] Control data:
+  0000:  4A 03 53 00 69 00 64 00 65 00 57 00 69 00 6E 00  |J.S.i.d.e.W.i.n.|
+  0010:  64 00 65 00 72 00 20 00 46 00 6F 00 72 00 63 00  |d.e.r. .F.o.r.c.|
+  0020:  65 00 20 00 46 00 65 00 65 00 64 00 62 00 61 00  |e. .F.e.e.d.b.a.|
+  0030:  63 00 6B 00 20 00 32 00 20 00 4A 00 6F 00 79 00  |c.k. .2. .J.o.y.|
+  0040:  73 00 74 00 69 00 63 00 6B 00                    |s.t.i.c.k.|
+Buffer complete
+Transfer complete
+on EP 00 with 0 bytes: OK
+
+@ 79801: Have [2] Product string, 72 bytes = [53 00 69 00 64 00 65 00 57 00 69 00 6e 00 64 00 65 00 72 00 20 00 46 00 6f 00 72 00 63 00 65 00 20 00 46 00 65 00 65 00 64 00 62 00 61 00 63 00 6b 00 20 00 32 00 20 00 4a 00 6f 00 79 00 73 00 74 00 69 00 63 00 6b 00] = 'SideWinder Force Feedback 2 Joystick'
+@ 79827: Fetching [2] Serial string
+  returns false.
+
+
+---- Strings are garbled for T.16000M, Sidewinder strings are fine...
+
+--- Disconnecting Sidewinder
+
+Buffer complete
+on EP 81 with 1 bytes: OK
+HUB xfer callback
+  Hub Status Change = 0x06
+HUB Get Port Status: addr = 21 port = 1
+[0:21] Class Request: A3 00 00 00 01 00 04 00 
+Transfer complete
+on EP 00 with 8 bytes: OK
+Buffer complete
+Transfer complete
+on EP 80 with 4 bytes: OK
+[0:21] Control data:
+  0000:  01 01 02 00                                      |....|
+Buffer complete
+Transfer complete
+on EP 00 with 0 bytes: OK
+
+HUB Clear Feature: PORT_ENABLE_CHANGE, addr = 21 port = 1
+[0:21] Class Request: 23 01 11 00 01 00 00 00 
+Transfer complete
+on EP 00 with 8 bytes: OK
+Buffer complete
+Transfer complete
+on EP 80 with 0 bytes: OK
+
+  Queue EP 81 with 1 bytes ... 
+OK
+Buffer complete
+on EP 81 with 1 bytes: OK
+HUB xfer callback
+  Hub Status Change = 0x04
+HUB Get Port Status: addr = 21 port = 2
+[0:21] Class Request: A3 00 00 00 02 00 04 00 
+Transfer complete
+on EP 00 with 8 bytes: OK
+Buffer complete
+Transfer complete
+on EP 80 with 4 bytes: OK
+[0:21] Control data:
+  0000:  00 01 01 00                                      |....|
+Buffer complete
+Transfer complete
+on EP 00 with 0 bytes: OK
+
+HUB Clear Feature: PORT_CONNECTION_CHANGE, addr = 21 port = 2
+[0:21] Class Request: 23 01 10 00 02 00 00 00 
+Transfer complete
+on EP 00 with 8 bytes: OK
+Buffer complete
+Transfer complete
+on EP 80 with 0 bytes: OK
+
+[0:21:2] USBH DEVICE REMOVED
+Device unplugged address = 2
+  HIDh close addr = 2 index = 1
+@ 106946: [2.1] disconnected
+  Queue EP 81 with 1 bytes ... 
+OK
+@ 111947: Fetching [1] Manufacturer string
+[0:1] Get Descriptor: 80 06 01 03 09 04 00 01 
+
+--- T.16000M not responding with strings any more ...
+
+--- Reconecting Sidewinder
+
+
+Buffer complete
+on EP 81 with 1 bytes: OK
+HUB xfer callback
+  Hub Status Change = 0x04
+HUB Get Port Status: addr = 21 port = 2
+  Queue EP 81 with 1 bytes ... 
+OK
+Buffer complete
+on EP 81 with 1 bytes: OK
+HUB xfer callback
+  Hub Status Change = 0x04
+HUB Get Port Status: addr = 21 port = 2
+  Queue EP 81 with 1 bytes ... 
+OK
+Buffer complete
+on EP 81 with 1 bytes: OK
+HUB xfer callback
+  Hub Status Change = 0x04
+HUB Get Port Status: addr = 21 port = 2
+  Queue EP 81 with 1 bytes ... 
+OK
+Buffer complete
+on EP 81 with 1 bytes: OK
+HUB xfer callback
+  Hub Status Change = 0x04
+HUB Get Port Status: addr = 21 port = 2
+  Queue EP 81 with 1 bytes ... 
+OK
+Buffer complete
+on EP 81 with 1 bytes: OK
+HUB xfer callback
+  Hub Status Change = 0x04
+HUB Get Port Status: addr = 21 port = 2
+  Queue EP 81 with 1 bytes ... 
+OK
+Buffer complete
+on EP 81 with 1 bytes: OK
+HUB xfer callback
+  Hub Status Change = 0x04
+HUB Get Port Status: addr = 21 port = 2
+  Queue EP 81 with 1 bytes ... 
+OK
+Buffer complete
+on EP 81 with 1 bytes: OK
+HUB xfer callback
+  Hub Status Change = 0x04
+HUB Get Port Status: addr = 21 port = 2
+  Queue EP 81 with 1 bytes ... 
+OK
+Buffer complete
+on EP 81 with 1 bytes: OK
+HUB xfer callback
+  Hub Status Change = 0x04
+HUB Get Port Status: addr = 21 port = 2
+  Queue EP 81 with 1 bytes ... 
+OK
+Buffer complete
+on EP 81 with 1 bytes: OK
+HUB xfer callback
+  Hub Status Change = 0x04
+HUB Get Port Status: addr = 21 port = 2
+  Queue EP 81 with 1 bytes ... 
+OK
+Buffer complete
+on EP 81 with 1 bytes: OK
+HUB xfer callback
+  Hub Status Change = 0x04
+HUB Get Port Status: addr = 21 port = 2
+  Queue EP 81 with 1 bytes ... 
+OK
+Buffer complete
+on EP 81 with 1 bytes: OK
+HUB xfer callback
+  Hub Status Change = 0x04
+HUB Get Port Status: addr = 21 port = 2
+  Queue EP 81 with 1 bytes ... 
+OK
+Buffer complete
+on EP 81 with 1 bytes: OK
+HUB xfer callback
+  Hub Status Change = 0x04
+HUB Get Port Status: addr = 21 port = 2
+  Queue EP 81 with 1 bytes ... 
+OK
+Buffer complete
+on EP 81 with 1 bytes: OK
+HUB xfer callback
+  Hub Status Change = 0x04
+HUB Get Port Status: addr = 21 port = 2
+  Queue EP 81 with 1 bytes ... 
+OK
+Buffer complete
+on EP 81 with 1 bytes: OK
+HUB xfer callback
+  Hub Status Change = 0x04
+HUB Get Port Status: addr = 21 port = 2
+  Queue EP 81 with 1 bytes ... 
+OK
+Buffer complete
+on EP 81 with 1 bytes: OK
+HUB xfer callback
+  Hub Status Change = 0x04
+HUB Get Port Status: addr = 21 port = 2
+  Queue EP 81 with 1 bytes ... 
+OK
+Buffer complete
+on EP 81 with 1 bytes: OK
+HUB xfer callback
+  Hub Status Change = 0x04
+HUB Get Port Status: addr = 21 port = 2
+  Queue EP 81 with 1 bytes ... 
+OK
+Buffer complete
+on EP 81 with 1 bytes: OK
+HUB xfer callback
+  Hub Status Change = 0x04
+HUB Get Port Status: addr = 21 port = 2
+  Queue EP 81 with 1 bytes ... 
+OK
+Buffer complete
+on EP 81 with 1 bytes: OK
+HUB xfer callback
+  Hub Status Change = 0x04
+HUB Get Port Status: addr = 21 port = 2
+  Queue EP 81 with 1 bytes ... 
+OK
+Buffer complete
+on EP 81 with 1 bytes: OK
+HUB xfer callback
+  Hub Status Change = 0x04
+HUB Get Port Status: addr = 21 port = 2
+  Queue EP 81 with 1 bytes ... 
+OK
+Buffer complete
+on EP 81 with 1 bytes: OK
+HUB xfer callback
+  Hub Status Change = 0x04
+HUB Get Port Status: addr = 21 port = 2
+  Queue EP 81 with 1 bytes ... 
+OK
+Buffer complete
+on EP 81 with 1 bytes: OK
+HUB xfer callback
+  Hub Status Change = 0x04
+HUB Get Port Status: addr = 21 port = 2
+  Queue EP 81 with 1 bytes ... 
+OK
+Buffer complete
+on EP 81 with 1 bytes: OK
+HUB xfer callback
+  Hub Status Change = 0x04
+HUB Get Port Status: addr = 21 port = 2
+  Queue EP 81 with 1 bytes ... 
+OK
+Buffer complete
+on EP 81 with 1 bytes: OK
+HUB xfer callback
+  Hub Status Change = 0x04
+HUB Get Port Status: addr = 21 port = 2
+  Queue EP 81 with 1 bytes ... 
+OK
+Buffer complete
+on EP 81 with 1 bytes: OK
+HUB xfer callback
+  Hub Status Change = 0x04
+HUB Get Port Status: addr = 21 port = 2
+  Queue EP 81 with 1 bytes ... 
+OK
+Buffer complete
+on EP 81 with 1 bytes: OK
+HUB xfer callback
+  Hub Status Change = 0x04
+HUB Get Port Status: addr = 21 port = 2
+  Queue EP 81 with 1 bytes ... 
+OK
+Buffer complete
+on EP 81 with 1 bytes: OK
+HUB xfer callback
+  Hub Status Change = 0x04
+HUB Get Port Status: addr = 21 port = 2
+  Queue EP 81 with 1 bytes ... 
+OK
+Buffer complete
+on EP 81 with 1 bytes: OK
+HUB xfer callback
+  Hub Status Change = 0x04
+HUB Get Port Status: addr = 21 port = 2
+  Queue EP 81 with 1 bytes ... 
+OK
+Buffer complete
+on EP 81 with 1 bytes: OK
+HUB xfer callback
+  Hub Status Change = 0x04
+HUB Get Port Status: addr = 21 port = 2
+  Queue EP 81 with 1 bytes ... 
+OK
+Buffer complete
+on EP 81 with 1 bytes: OK
+HUB xfer callback
+  Hub Status Change = 0x04
+HUB Get Port Status: addr = 21 port = 2
+  Queue EP 81 with 1 bytes ... 
+OK
+Buffer complete
+on EP 81 with 1 bytes: OK
+HUB xfer callback
+  Hub Status Change = 0x04
+HUB Get Port Status: addr = 21 port = 2
+  Queue EP 81 with 1 bytes ... 
+OK
+Buffer complete
+on EP 81 with 1 bytes: OK
+HUB xfer callback
+  Hub Status Change = 0x04
+HUB Get Port Status: addr = 21 port = 2
+  Queue EP 81 with 1 bytes ... 
+OK
+Buffer complete
+on EP 81 with 1 bytes: OK
+HUB xfer callback
+  Hub Status Change = 0x04
+HUB Get Port Status: addr = 21 port = 2
+  Queue EP 81 with 1 bytes ... 
+OK
+Buffer complete
+on EP 81 with 1 bytes: OK
+HUB xfer callback
+  Hub Status Change = 0x04
+HUB Get Port Status: addr = 21 port = 2
+  Queue EP 81 with 1 bytes ... 
+OK
+Buffer complete
+on EP 81 with 1 bytes: OK
+HUB xfer callback
+  Hub Status Change = 0x04
+HUB Get Port Status: addr = 21 port = 2
+  Queue EP 81 with 1 bytes ... 
+OK
+Buffer complete
+on EP 81 with 1 bytes: OK
+HUB xfer callback
+  Hub Status Change = 0x04
+HUB Get Port Status: addr = 21 port = 2
+  Queue EP 81 with 1 bytes ... 
+OK
+Buffer complete
+on EP 81 with 1 bytes: OK
+HUB xfer callback
+  Hub Status Change = 0x04
+HUB Get Port Status: addr = 21 port = 2
+  Queue EP 81 with 1 bytes ... 
+OK
+Buffer complete
+on EP 81 with 1 bytes: OK
+HUB xfer callback
+  Hub Status Change = 0x04
+HUB Get Port Status: addr = 21 port = 2
+  Queue EP 81 with 1 bytes ... 
+OK
+Buffer complete
+on EP 81 with 1 bytes: OK
+HUB xfer callback
+  Hub Status Change = 0x04
+HUB Get Port Status: addr = 21 port = 2
+  Queue EP 81 with 1 bytes ... 
+OK
+Buffer complete
+on EP 81 with 1 bytes: OK
+HUB xfer callback
+  Hub Status Change = 0x04
+HUB Get Port Status: addr = 21 port = 2
+  Queue EP 81 with 1 bytes ... 
+OK
+Buffer complete
+on EP 81 with 1 bytes: OK
+HUB xfer callback
+  Hub Status Change = 0x04
+HUB Get Port Status: addr = 21 port = 2
+  Queue EP 81 with 1 bytes ... 
+OK
+Buffer complete
+on EP 81 with 1 bytes: OK
+HUB xfer callback
+  Hub Status Change = 0x04
+HUB Get Port Status: addr = 21 port = 2
+  Queue EP 81 with 1 bytes ... 
+OK
+Buffer complete
+on EP 81 with 1 bytes: OK
+HUB xfer callback
+  Hub Status Change = 0x04
+HUB Get Port Status: addr = 21 port = 2
+  Queue EP 81 with 1 bytes ... 
+OK
+Buffer complete
+on EP 81 with 1 bytes: OK
+HUB xfer callback
+  Hub Status Change = 0x04
+HUB Get Port Status: addr = 21 port = 2
+  Queue EP 81 with 1 bytes ... 
+OK
+Buffer complete
+on EP 81 with 1 bytes: OK
+HUB xfer callback
+  Hub Status Change = 0x04
+HUB Get Port Status: addr = 21 port = 2
+  Queue EP 81 with 1 bytes ... 
+OK
+Buffer complete
+on EP 81 with 1 bytes: OK
+HUB xfer callback
+  Hub Status Change = 0x04
+HUB Get Port Status: addr = 21 port = 2
+  Queue EP 81 with 1 bytes ... 
+OK
+[0:0:0] USBH DEVICE REMOVED
+Device unplugged address = 1
+  HIDh close addr = 1 index = 0
+@ 151962: [1.0] disconnected
+Device unplugged address = 21
+  is a HUB device 21
+  HUB close addr = 21
+Device unplugged address = 22
+  is a HUB device 22
+  HUB close addr = 22
+[0:21:0] USBH DEVICE REMOVED
+[0:22:0] USBH DEVICE REMOVED
+
+--- Disconnected hub, seemed stuck in endless loop
+
