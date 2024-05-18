@@ -1,0 +1,7 @@
+**/build/
+tool/
+.cache/
+.vscode/
+src/generated_*/
+generated_*/
+bootcode.bin
